@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 class Marathon 
 {
 	// Find the index with the smallest number
@@ -46,5 +48,13 @@ class Marathon
         
         // Print out the fastest runner
         System.out.println("The fastest runner is " + names[fastest_index] + " with time " + times[fastest_index] + ".");
+        
+        // Part 2 
+        // Sorting the data
+        
+        // Sort the data and print out the sorted array
+        Arrays.sort(times);
+        for (int i=0; i<times.length; i++)
+        	System.out.println(times[i]);
     }
 } 
