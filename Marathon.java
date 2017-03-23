@@ -56,5 +56,25 @@ class Marathon
         Arrays.sort(times);
         for (int i=0; i<times.length; i++)
         	System.out.println(times[i]);
+        
+        // Part 3
+        // Array of Runner objects
+        
+        // Create an array of runner objects and initialize each array item with 
+        Runner[] runners = new Runner[names.length];
+        for (int i=0; i<runners.length; i++)
+        	runners[i] = new Runner(names[i], times[i]);
+        for (int i=0; i<runners.length; i++)
+        	System.out.println(runners[i].name + ": " + runners[i].time);
     }
 } 
+
+
+
+
+
+
+
+
+
+
